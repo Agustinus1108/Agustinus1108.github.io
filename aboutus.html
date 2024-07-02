@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Skill Boost</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background: #f9f8f9;
+            margin: 0;
+            padding: 0;
+        }
+        
+/* BAGIAN NAVBAR */
+.container {
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   background: #f9f8f9;
+}
+
+/* navigasi atas */
+.logo {
+  padding: 14px 16px;
+}
+
+.navbar {
+  background: #f9f8f9;
+  width: 95%;
+  top: 0;
+  box-shadow: 0 2px 5px rgb(0,0,0,0.1);
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  z-index: 1000;
+}
+
+  /* ul dalam navigasi */
+  .nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  /* li dalam navigasi */
+  .nav-menu li {
+    margin-right: 20px;
+  }
+  
+  /* link a di navigasi */
+  .navbar li a {
+    display: inline-block;
+    color: #0b0b0b;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* hover navbar */
+  .navbar li a:hover {
+    color: black;
+  }
+
+
+        /* BAGIAN TIMELINE */
+        .about-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 40px 20px;
+            background: #f9f8f9;
+            flex-wrap: wrap;
+        }
+        .about-section img {
+            max-width: 45%;
+            height: auto;
+            margin-right: 20px;
+            flex: 1;
+        }
+        .about-section div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex: 2;
+            max-width: 50%;
+        }
+        .about-section h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+        .about-section p {
+            font-size: 16px;
+            color: #555;
+        }
+
+ /* BAGIAN MISI */ 
+ 
+ .mission-container {
+            background-color: #f6f9fa;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-left: 170px;
+            margin-right: 170px;
+        }
+
+.container-misi {
+    text-align: center;
+    background-color: #f9f8f9;
+}
+
+h1 {
+    color: #1a73e8;
+    margin-bottom: 20px;
+}
+
+.mission-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #b0c1e4;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card h2 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #333;
+    font-size: 14px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    background-color: #cfe0ff;
+ }
+
+ /* BAGIAN TEAM */
+ .team-section-zoomable {
+        margin-top:5px;
+        padding: 20px;
+        background: #f9f8f9;
+    
+    }
+    .team-section-zoomable h2{
+        padding-left: 50px;
+    }
+    .team-members {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .team-member {
+        flex: 1 1 30%;
+        margin: 10px;
+        text-align: center;
+        position: relative;
+    }
+    .team-member img {
+        max-width: 150px; /* Increase the maximum width to make images larger */
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        transition: transform 0.3s ease-in-out;
+        cursor: pointer;
+    }
+    .team-member img.zoomed {
+        transform: scale(1.5);
+    }
+
+    /* BAGIAN FOOTER */
+    .footer {
+            color: #262626;
+            padding: 20px 0;
+            text-align: center;
+            background-color: #b0c1e4;
+            box-shadow: 0 2px 5px rgb(0,0,0,0.1);
+        }
+
+        .footer h4 {
+            margin-bottom: 15px;
+            font-size: 16px;
+            color: #090909;
+        }
+
+        .footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer ul li a {
+            color: #949090;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer ul li a:hover {
+            color: #1a73e8;
+        }
+
+        .footer .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #504f4f;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+
+        .footer .social-links a:hover {
+            color: #1a73e8;
+        }
+
+        .copp p {
+            margin: 20px 0 0;
+            font-size: 14px;
+            color: #0c0c0c;
+        }
+
+        .container_footer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+
+        .footer-col {
+            flex: 1 1 200px;
+            margin: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .about-section {
+                flex-direction: column;
+                text-align: center;
+            }
+            .about-section img {
+                margin: 0 0 20px 0;
+                max-width: 80%;
+            }
+            .about-section div {
+                max-width: 100%;
+            }
+            .mission-item {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo"> SKILL BOOST </div>
+            <ul class="nav-menu">
+            <li><a href="coba.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+          </div> 
+    </div>  
+
+    <div class="about-section">
+        <div>
+            <h2>"Unlock Your Potential with Skill Boost: Learn, Grow, Succeed!"</h2>
+            <p>Skill Boost adalah platform kursus online yang revolusioner, menyediakan akses mudah ke berbagai materi pelatihan untuk meningkatkan keterampilan profesional di berbagai bidang. Dengan kurikulum yang dirancang oleh para ahli industri, kursus-kursusnya tidak hanya menyediakan pengetahuan yang mendalam tetapi juga menekankan penerapan praktis dalam dunia nyata.</p>
+        </div>
+        <img src="assets/images/aboutus_image.png" alt="About Image">
+    </div>
+
+    <div class="container-misi">
+        <h1>MISI</h1>
+        <div class="mission-container">
+        <div class="mission-cards">
+            <div class="card">
+                <h2>Kualitas dan Relevansi</h2>
+                <p>Menyediakan kursus-kursus berkualitas tinggi yang relevan dengan kebutuhan pasar dan industri saat ini.</p>
+            </div>
+            <div class="card">
+                <h2>Pengalaman Pembelajaran</h2>
+                <p>Menyediakan kursus-kursus berkualitas tinggi yang relevan dengan kebutuhan pasar dan industri saat ini.</p>
+            </div>
+            <div class="card">
+                <h2>Aksesibilitas Tanpa Batas</h2>
+                <p>Kami berkomitmen untuk menyediakan kursus online yang mudah diakses dari mana saja, kapan saja, dan oleh siapa saja.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="team-section-zoomable">
+        <h2>Our Team</h2>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="assets/images/hr_card.png" alt="Team Member 1">
+                <h3>Agustinus</h3>
+                <p>2021435011</p>
+            </div>
+            <div class="team-member">
+                <img src="assets/images/hr_card.png" alt="Team Member 2">
+                <h3>Khatya</h3>
+                <p>202143501113</p>
+            </div>
+            <div class="team-member">
+                <img src="assets/images/hr_card.png" alt="Team Member 2">
+                <h3>Regita</h3>
+                <p>202143501158</p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const images = document.querySelectorAll('.team-member img');
+    
+            images.forEach(img => {
+                img.addEventListener('click', () => {
+                    img.classList.toggle('zoomed');
+                });
+            });
+        });
+    </script>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container_footer">
+        <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">our services</a></li>
+                <li><a href="#">privacy policy</a></li>
+                <li><a href="#">affiliate program</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">returns</a></li>
+                <li><a href="#">order status</a></li>
+                <li><a href="#">payment options</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>career</h4>
+            <ul>
+                <li><a href="#">hiring</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="copp">
+        <p>&copy; 2024 <strong>Skill Boost.</strong> All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

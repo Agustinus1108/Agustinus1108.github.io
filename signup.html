@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Skill Boost</title>
+    <link rel="stylesheet" href="assets/css/signup.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="login">
+            <h2>SIGN IN HERE</h2>
+            <hr>
+                <p>Buat akun</p>
+            <form action="signup_proses.php" method="post">
+                <div class="form-grup">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required placeholder="masukan email anda">
+                </div>
+                <div class="form-grup">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required placeholder="buat password">
+                </div>
+                <div class="form-grup">
+                    <label for="confirm_password">Confirm Password:</label>
+                    <input type="password" id="confirm_password" name="confirm_password" required placeholder="ulangi password">
+                </div>
+                <button type="submit">Create Account</button>
+                <p>
+                    <span class="masuk_login">Sudah punya akun? <a href="login.html">Login</a></span>
+                </p>
+            </form>
+        </div>
+        <div class="right">
+            <img src="assets/images/l_image.png" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

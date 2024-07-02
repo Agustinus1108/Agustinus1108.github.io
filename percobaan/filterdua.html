@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Website</title>
+  <style>
+    /* CSS di sini */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .course-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .card {
+      width: 250px;
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .filter {
+      margin-bottom: 20px;
+    }
+
+    .filter label {
+      margin-right: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .filter label:hover {
+      color: #007bff;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- BAGIAN FILTER -->
+    <div class="filter">
+      <div class="in-filter">
+        <h2> Filter </h2>
+        <a href="#" id="reset-filter"> Reset Filter</a>
+        <h3>License</h3>
+        <label><input type="checkbox" class="filter-checkbox" data-filter="paid"> Paid</label><br>
+        <label><input type="checkbox" class="filter-checkbox" data-filter="gratis"> Gratis</label><br>
+        <h3>Tipe Kelas</h3>
+        <label><input type="checkbox" class="filter-checkbox" data-filter="soft"> Soft skill</label><br>
+        <label><input type="checkbox" class="filter-checkbox" data-filter="hard"> Hard skill </label><br>
+        <label><input type="checkbox" class="filter-checkbox" data-filter="lainnya"> Kelas lainnya </label><br>
+        <h3>Level Kelas</h3>
+        <label><input type="checkbox" class="filter-checkbox" data-filter="dasar"> Dasar </label><br>
+        <label><input type="checkbox" class="filter-checkbox" data-filter="medium"> Medium </label><br>
+        <label><input type="checkbox" class="filter-checkbox" data-filter="sulit"> Sulit </label><br>
+        <label><input type="checkbox" class="filter-checkbox" data-filter="lainnya"> Lainnya</label><br>
+        <h3>Rating Kelas</h3>
+        <label><input type="checkbox" class="filter-checkbox" data-filter="1"> <i class="fa fa-star"></i></label><br>
+        <label><input type="checkbox" class="filter-checkbox" data-filter="2"> <i class="fa fa-star"></i><i class="fa fa-star"></i></label><br>
+        <label><input type="checkbox" class="filter-checkbox" data-filter="3"> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></label><br>
+        <label><input type="checkbox" class="filter-checkbox" data-filter="4"> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></label><br>
+        <label><input type="checkbox" class="filter-checkbox" data-filter="5"> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></label><br>
+        <h3>Durasi Kelas</h3>
+        <label><input type="checkbox" class="filter-checkbox" data-filter="jam"> Kurang dari 2 jam</label><br>
+        <label><input type="checkbox" class="filter-checkbox" data-filter="hari"> 1-5 hari</label><br>
+        <label><input type="checkbox" class="filter-checkbox" data-filter="minggu"> Lebih dari 1 Minggu</label><br>
+        <label><input type="checkbox" class="filter-checkbox" data-filter="lainnya"> Durasi lainnya</label><br>
+
+        <div class="simpan">
+          <button id="simpan-filter">Simpan Filter</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card -->
+    <!-- card 1 -->
+<div class="card gratis soft dasar 4">
+    <img src="assets/images/bisnis_card.png" alt="Gambar kursus">
+    <h4>Businesses Development</h4>
+    <div class="bintang">  
+      <i class="fa fa-star checked"></i>
+      <span> 4.8/5 </span>
+    </div> 
+    <br>                
+    <span class="gratis"> Gratis </span>
+    <span class="jam">1h30m2s</span>
+  </div>
+  
+  <!-- card 2 -->
+  <div class="card gratis soft medium 4">
+    <img src="assets/images/frontend_card.png" alt="Gambar kursus">
+    <h4>Front-end web development</h4>
+    <div class="bintang">  
+      <i class="fa fa-star checked"></i>
+      <span> 4.8/5 </span>
+    </div> 
+    <br>                
+    <span class="paid"> Paid </span>
+    <span class="jam">1h30m2s</span>
+  </div>
+  
+  <!-- card 3 -->
+  <div class="card paid soft sulit 5">
+    <img src="assets/images/sosial_media_card.png" alt="Gambar kursus">
+    <h4>Social Media Specialist</h4>
+    <div class="bintang">  
+      <i class="fa fa-star checked"></i>
+      <span> 4.8/5 </span>
+    </div> 
+    <br>                
+    <span class="gratis"> Gratis </span>
+    <span class="jam">1h30m2s</span>
+  </div>
+  
+  <!-- card 4 -->
+  <div class="card paid hard medium 3">
+    <img src="assets/images/finance_card.png" alt="Gambar kursus">
+    <h4>Finance & Accounting</h4>
+    <div class="bintang">  
+      <i class="fa fa-star checked"></i>
+      <span> 4.8/5 </span>
+    </div> 
+    <br>                
+    <span class="gratis"> Gratis </span>
+    <span class="jam">1h30m2s</span>
+  </div>
+  
+  <!-- card 5 -->
+  <div class="card gratis soft medium 2">
+    <img src="assets/images/uxui_card.png" alt="Gambar kursus">
+    <h4>Desain UI/UX</h4>
+    <div class="bintang">  
+      <i class="fa fa-star checked"></i>
+      <span> 4.8/5 </span>
+    </div> 
+    <br>                
+    <span class="gratis"> Gratis </span>
+    <span class="jam">1h30m2s</span>
+  </div>
+  
+  <!-- card 6 -->
+  <div class="card gratis soft dasar 5">
+    <img src="assets/images/hr_card.png" alt="Gambar kursus">
+    <h4>Human Resources (HR)</h4>
+    <div class="bintang">  
+      <i class="fa fa-star checked"></i>
+      <span> 4.8/5 </span>
+    </div> 
+    <br>                
+    <span class="gratis"> Gratis </span>
+    <span class="jam">1h30m2s</span>
+  </div>
+  
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const resetFilterBtn = document.getElementById("reset-filter");
+      const simpanFilterBtn = document.getElementById("simpan-filter");
+      const filterCheckboxes = document.querySelectorAll(".filter-checkbox");
+  
+      resetFilterBtn.addEventListener("click", function() {
+        filterCheckboxes.forEach(function(checkbox) {
+          checkbox.checked = false;
+        });
+        filterCards([]);
+      });
+  
+      simpanFilterBtn.addEventListener("click", function() {
+        const activeFilters = Array.from(filterCheckboxes)
+          .filter(function(checkbox) {
+            return checkbox.checked;
+          })
+          .map(function(checkbox) {
+            return checkbox.getAttribute("data-filter");
+          });
+  
+        filterCards(activeFilters);
+      });
+  
+      function filterCards(activeFilters) {
+        const cards = document.querySelectorAll(".card");
+        cards.forEach(function(card) {
+          const classes = card.className.split(" ");
+          const shouldShow = activeFilters.every(function(filter) {
+            return classes.includes(filter);
+          });
+          if (shouldShow) {
+            card.style.visibility = "visible";
+          } else {
+            card.style.visibility = "hidden";
+          }
+        });
+      }
+    });
+  </script>
+  
+  
+</body>
+</html>

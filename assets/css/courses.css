@@ -1,0 +1,250 @@
+/* BAGIAN ATAS */
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: #fff; 
+  margin: 0px;
+  padding: 0px;
+}
+
+/* BAGIAN NAVBAR */
+.container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+/* navigasi atas */
+.logo {
+padding: 14px 16px;
+}
+
+.navbar {
+  background: #fff;
+  width: 100%;
+  top: 0;
+  box-shadow: 0 2px 5px rgb(0,0,0,0.1);
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+/* ul dalam navigasi */
+.nav-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* li dalam navigasi */
+.nav-menu li {
+  margin-right: 20px;
+}
+
+/* link a di navigasi */
+.navbar li a {
+  display: inline-block;
+  color: #0b0b0b;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* hover navbar */
+.navbar li a:hover {
+  color: black;
+}
+
+/* dalam card */
+.license {
+  color: #f2f2f2;
+  background-color: #1a73e8;
+  border-radius: 5px;
+  width: 300px;
+}
+.jam {
+  color: rgb(24, 119, 235);
+}
+
+.gratis {
+  color: #666;
+}
+
+.course-cards {
+  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  grid-gap: 0rem;
+  justify-content: center;
+  margin: 1rem;
+  padding-right: 100px;
+}
+
+.card {
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  width: calc(33.333% - 2rem);
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.3s ease-in-out;
+  width: 250px;
+  height: 320px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.bintang {
+  color: #f4ad20;
+}
+
+.card button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.card button:hover {
+  background-color: #444;
+}
+
+.rekomendasi{
+  padding-top: 60px;
+}
+
+.filter {
+  float: left;
+  width: 250px;
+  margin-right: 100px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position:static;
+  margin-top:1.1%;
+  margin-left: 10px;
+  transition: transform 0.3s ease-in-out;
+  height: 690px;
+}
+.filter:hover {
+  transform: translateY(-5px);
+}
+
+.in-filter{
+  padding-left: 40px;
+}
+
+.simpan {
+  clear: both;
+  display: block;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 8px;
+  width: 150px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 5px;
+  background:#3F69FF;
+}
+
+button:hover {
+  background: rgb(175, 157, 242);
+}
+
+/* BAGIAN FOOTER */
+.footer {
+  color: #262626;
+  padding: 20px 0;
+  text-align: center;
+  background-color: #b0c1e4;
+  box-shadow: 0 2px 5px rgb(0,0,0,0.1);
+}
+
+.footer h4 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #090909;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  color: #949090;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+  color: #1a73e8;
+}
+
+.footer .social-links a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #504f4f;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.footer .social-links a:hover {
+  color: #1a73e8;
+}
+
+.copp p {
+  margin: 20px 0 0;
+  font-size: 14px;
+  color: #0c0c0c;
+}
+
+.container_footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.footer-col {
+  flex: 1 1 200px;
+  margin: 10px;
+}
